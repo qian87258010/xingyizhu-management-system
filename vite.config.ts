@@ -19,4 +19,13 @@ export default defineConfig({
 
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
+  
+  // 构建配置
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+  },
+  
+  // 基础路径（Vercel 部署）
+  base: '/',
 })
