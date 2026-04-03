@@ -17,7 +17,7 @@ import { toast } from 'sonner';
 import { Toaster } from 'sonner';
 import { getRoleLabel } from './utils/permissions';
 import { initializeMockPendingUsers } from './utils/initializeMockData';
-import logoImage from '../../assets/d2ecfad67a5fed4141bffbac989f681e5bac3fb7.png';
+import logoImage from '../assets/d2ecfad67a5fed4141bffbac989f681e5bac3fb7.png';
 
 // 初始化模拟数据
 initializeMockPendingUsers();
