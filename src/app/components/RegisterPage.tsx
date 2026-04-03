@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { UserPlus, AlertCircle, ArrowLeft } from 'lucide-react';
 import { toast } from 'sonner';
-import logoImage from 'figma:asset/d2ecfad67a5fed4141bffbac989f681e5bac3fb7.png';
+import logoImage from '../../assets/d2ecfad67a5fed4141bffbac989f681e5bac3fb7.png';
 
 interface RegisterPageProps {
   onBackToLogin: () => void;
