@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { LogIn, AlertCircle } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import RegisterPage from './RegisterPage';
-import logoImage from 'figma:asset/d2ecfad67a5fed4141bffbac989f681e5bac3fb7.png';
+import logoImage from '../../assets/d2ecfad67a5fed4141bffbac989f681e5bac3fb7.png';
 
 export default function LoginPage() {
   const { login } = useAuth();
