@@ -1,0 +1,260 @@
+import { Employee, Department, Project, Payment } from '../types';
+
+export const mockEmployees: Employee[] = [
+  {
+    id: '1',
+    name: '管理员',
+    email: '1527982017@qq.com',
+    department: '管理部',
+    position: '系统管理员',
+    phone: '138-0000-0001',
+    hireDate: '2023-01-15',
+    salary: 15000,
+    status: 'active',
+    role: 'admin',
+    canLogin: true,
+    password: '123456',
+    approvalStatus: 'approved'
+  },
+  {
+    id: '2',
+    name: '钱钱',
+    email: 'qianqian@company.com',
+    department: '管理部',
+    position: '财务总监',
+    phone: '138-0000-0002',
+    hireDate: '2023-01-15',
+    salary: 18000,
+    status: 'active',
+    role: 'admin',
+    canLogin: true,
+    password: '123456',
+    approvalStatus: 'approved'
+  }
+];
+
+export const mockDepartments: Department[] = [
+  {
+    id: '1',
+    name: '管理部',
+    manager: '管理员',
+    employeeCount: 2,
+    description: '负责公司整体运营管理'
+  }
+];
+
+export const mockProjects: Project[] = [
+  {
+    id: '1',
+    name: '万科住宅室内设计',
+    client: '万科地产',
+    clientContact: '陈总',
+    clientPhone: '138-1234-5678',
+    type: '室内设计',
+    status: '进行中',
+    startDate: '2026-02-15',
+    totalAmount: 250000,
+    paidAmount: 100000,
+    description: '150平米现代简约风格住宅设计',
+    assignedTo: '张三',
+    modelProgress: 80,
+    renderProgress: 60,
+    postProductionProgress: 30,
+    modelStartDate: '2026-02-15',
+    modelEndDate: '2026-03-15',
+    renderStartDate: '2026-03-16',
+    renderEndDate: '2026-04-10',
+    postProductionStartDate: '2026-04-11',
+    postProductionEndDate: '2026-04-25'
+  },
+  {
+    id: '2',
+    name: '星巴克店面设计',
+    client: '星巴克咖啡',
+    clientContact: '李经理',
+    clientPhone: '139-2345-6789',
+    type: '室内设计',
+    status: '进行中',
+    startDate: '2026-03-01',
+    totalAmount: 180000,
+    paidAmount: 90000,
+    description: '商业咖啡店面空间设计及软装',
+    assignedTo: '赵六',
+    modelProgress: 100,
+    renderProgress: 75,
+    postProductionProgress: 45,
+    modelStartDate: '2026-03-01',
+    modelEndDate: '2026-03-20',
+    renderStartDate: '2026-03-21',
+    renderEndDate: '2026-04-05',
+    postProductionStartDate: '2026-04-06',
+    postProductionEndDate: '2026-04-20'
+  },
+  {
+    id: '3',
+    name: '绿城别墅建筑设计',
+    client: '绿城集团',
+    clientContact: '王总',
+    clientPhone: '137-3456-7890',
+    type: '建筑设计',
+    status: '洽谈中',
+    startDate: '2026-04-10',
+    totalAmount: 500000,
+    paidAmount: 0,
+    description: '独栋别墅建筑方案设计',
+    assignedTo: '张三',
+    modelProgress: 0,
+    renderProgress: 0,
+    postProductionProgress: 0
+  },
+  {
+    id: '4',
+    name: '公园景观改造',
+    client: '市政园林局',
+    clientContact: '刘主任',
+    clientPhone: '136-4567-8901',
+    type: '景观设计',
+    status: '已完成',
+    startDate: '2025-11-01',
+    endDate: '2026-01-30',
+    totalAmount: 320000,
+    paidAmount: 320000,
+    description: '城市公园景观提升改造',
+    assignedTo: '李四',
+    modelProgress: 100,
+    renderProgress: 100,
+    postProductionProgress: 100,
+    modelStartDate: '2025-11-01',
+    modelEndDate: '2025-11-25',
+    renderStartDate: '2025-11-26',
+    renderEndDate: '2025-12-20',
+    postProductionStartDate: '2025-12-21',
+    postProductionEndDate: '2026-01-30'
+  },
+  {
+    id: '5',
+    name: '办公楼室内设计',
+    client: '阿里巴巴',
+    clientContact: '张经理',
+    clientPhone: '135-5678-9012',
+    type: '室内设计',
+    status: '进行中',
+    startDate: '2026-01-20',
+    totalAmount: 680000,
+    paidAmount: 408000,
+    description: '科技公司办公空间设计',
+    assignedTo: '赵六',
+    modelProgress: 95,
+    renderProgress: 85,
+    postProductionProgress: 60,
+    modelStartDate: '2026-01-20',
+    modelEndDate: '2026-02-20',
+    renderStartDate: '2026-02-21',
+    renderEndDate: '2026-03-25',
+    postProductionStartDate: '2026-03-26',
+    postProductionEndDate: '2026-04-15'
+  },
+  {
+    id: '6',
+    name: '商业广场宣传片',
+    client: '万达广场',
+    clientContact: '周总',
+    clientPhone: '138-9876-5432',
+    type: '三维动画',
+    status: '进行中',
+    startDate: '2026-03-15',
+    totalAmount: 420000,
+    paidAmount: 168000,
+    description: '3分钟商业地产宣传动画制作',
+    assignedTo: '李四',
+    modelProgress: 100,
+    renderProgress: 50,
+    postProductionProgress: 20,
+    modelStartDate: '2026-03-15',
+    modelEndDate: '2026-03-30',
+    renderStartDate: '2026-03-31',
+    renderEndDate: '2026-04-20',
+    postProductionStartDate: '2026-04-21',
+    postProductionEndDate: '2026-05-10'
+  }
+];
+
+export const mockPayments: Payment[] = [
+  {
+    id: '1',
+    projectId: '1',
+    projectName: '万科住宅室内设计',
+    client: '万科地产',
+    amount: 100000,
+    paymentDate: '2026-02-20',
+    paymentMethod: '银行转账',
+    invoiceNumber: 'INV-2026-001',
+    note: '首付款40%'
+  },
+  {
+    id: '2',
+    projectId: '2',
+    projectName: '星巴克店面设计',
+    client: '星巴克咖啡',
+    amount: 90000,
+    paymentDate: '2026-03-05',
+    paymentMethod: '银行转账',
+    invoiceNumber: 'INV-2026-002',
+    note: '首付款50%'
+  },
+  {
+    id: '3',
+    projectId: '4',
+    projectName: '公园景观改造',
+    client: '市政园林局',
+    amount: 160000,
+    paymentDate: '2025-12-15',
+    paymentMethod: '支票',
+    invoiceNumber: 'INV-2025-045',
+    note: '第一期款项'
+  },
+  {
+    id: '4',
+    projectId: '4',
+    projectName: '公园景观改造',
+    client: '市政园林局',
+    amount: 160000,
+    paymentDate: '2026-02-10',
+    paymentMethod: '支票',
+    invoiceNumber: 'INV-2026-003',
+    note: '尾款'
+  },
+  {
+    id: '5',
+    projectId: '5',
+    projectName: '办公楼室内设计',
+    client: '阿里巴巴',
+    amount: 272000,
+    paymentDate: '2026-02-01',
+    paymentMethod: '银行转账',
+    invoiceNumber: 'INV-2026-004',
+    note: '首付款40%'
+  },
+  {
+    id: '6',
+    projectId: '5',
+    projectName: '办公楼室内设计',
+    client: '阿里巴巴',
+    amount: 136000,
+    paymentDate: '2026-03-15',
+    paymentMethod: '银行转账',
+    invoiceNumber: 'INV-2026-005',
+    note: '第二期款项20%'
+  }
+];
+
+export const mockUsers = mockEmployees.filter(emp => emp.canLogin).map(emp => ({
+  id: emp.id,
+  name: emp.name,
+  email: emp.email,
+  role: emp.role || 'employee',
+  employeeId: emp.id,
+  password: emp.password,
+  customPermissions: emp.customPermissions,
+  approvalStatus: emp.approvalStatus || 'approved'
+}));

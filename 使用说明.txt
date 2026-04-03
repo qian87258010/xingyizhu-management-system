@@ -1,0 +1,106 @@
+═══════════════════════════════════════════════════
+  星奕筑管理系统 - 使用说明
+═══════════════════════════════════════════════════
+
+📦 这是一个完整的企业管理系统，支持网页部署和打包成 Mac 应用
+
+🚀 快速开始（3步完成）：
+
+1️⃣ 打开终端，进入项目文件夹
+   cd /你的项目路径/星奕筑管理系统
+
+2️⃣ 安装依赖
+   npm install
+
+3️⃣ 启动应用
+   npm run dev
+   
+   然后在浏览器打开: http://localhost:5173
+
+---
+
+🌐 部署成网页（推荐）：
+
+方式一：使用快捷工具（最简单）
+   chmod +x quick-start.sh
+   ./quick-start.sh
+   
+   选择 "3) 部署到 Vercel"
+
+方式二：手动部署到 Vercel
+   1. 访问 vercel.com 用 GitHub 登录
+   2. New Project → 选择仓库 → Deploy
+   3. 完成！得到网址：https://你的项目.vercel.app
+
+详细教程：网页部署-快速开始.md
+
+---
+
+💻 打包成 Mac 应用：
+
+方式一：使用快捷工具（最简单）
+   chmod +x quick-start.sh
+   ./quick-start.sh
+   
+   选择 "8) 打包成 Mac 应用"
+
+方式二：使用命令行
+   npm install --save-dev electron electron-builder concurrently wait-on cross-env
+   npm run dist:mac
+
+打包完成后，在 release/ 文件夹找到 .dmg 安装包
+
+---
+
+📚 详细文档：
+
+- 开始使用.md            → 总览和快速导航
+- 网页部署-快速开始.md  → 3分钟部署到网页
+- README.md              → 项目总览和功能介绍
+- INSTALL.md             → 详细安装和打包指南  
+- 打包指南.md            → 完整的 Mac 打包教程
+- 网页地址说明.md        → 各种部署方式的网址说明
+
+---
+
+🔑 测试账号：
+
+管理员：1527982017@qq.com / 123456
+管理员（钱钱）：qianqian@company.com / 123456
+
+新用户注册后需要管理员审批才能登录
+
+---
+
+❓ 常见问题：
+
+Q: 如何运行脚本？
+A: chmod +x quick-start.sh
+   ./quick-start.sh
+
+Q: 网页地址是什么？
+A: 部署到 Vercel 后得到：https://你的项目.vercel.app
+   查看"网页地址说明.md"了解详情
+
+Q: 打包的应用在哪里？
+A: release/ 文件夹中的 .dmg 文件
+
+Q: 如何安装打包后的应用？
+A: 双击 .dmg 文件，拖到 Applications 文件夹
+
+Q: 首次打开提示安全问题？
+A: 右键点击应用 → 选择"打开"
+
+---
+
+📞 需要帮助？
+
+查看详细文档：
+  - 打开 开始使用.md 查看总览
+  - 打开 网页部署-快速开始.md 学习部署
+  - 打开 INSTALL.md 查看详细安装指南
+  - 运行 ./quick-start.sh 使用图形化菜单
+
+---
+
+🎉 祝使用愉快！
